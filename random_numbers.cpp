@@ -1,6 +1,6 @@
 #include <cstdlib>
-#include <ctime>
 
-srand(time(0));
+int generarDado() {
 
-int dado = rand() % 6 + 1;
+    return rand() % 6 + 1;
+}
