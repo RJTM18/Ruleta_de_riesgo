@@ -1,6 +1,6 @@
 #include <cstdlib>
 
-int generarDado() {
+int generarCarta() {
 
-    return rand() % 6 + 1;
+    return rand() % 10 + 1;
 }
