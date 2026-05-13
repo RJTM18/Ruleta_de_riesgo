@@ -4,7 +4,6 @@
 
 using namespace std;
 
-// funcion del otro archivo
 int generarCarta();
 
 int main() {
@@ -26,12 +25,10 @@ int main() {
 
 	cout << "Comienza el juego!!!\n";
 
-	// cartas aleatorias
 	cart_1 = generarCarta();
     cart_2 = generarCarta();
     cart_3 = generarCarta();
 
-    // suma de primeras cartas
     sum_1y2 = cart_1 + cart_2;
 
 	cout << "Recibes la primera carta:\n " << cart_1 << endl;
@@ -94,3 +91,4 @@ int main() {
 
 	return 0;
 }
+//ya culmine los cambios: Alejandro
