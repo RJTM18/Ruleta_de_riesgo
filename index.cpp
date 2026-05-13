@@ -15,11 +15,12 @@ int main() {
 
 	cout << "Comienza el juego!!!\n";
 
+	//funciones que generen los valores de carta 1, 2 y 3
+
 	cout << "Recibes la primera carta:\n " << cart_1 << endl;
 	cout << "Recibes la segunda carta:\n " << cart_2 << endl;
-
-	//funciones que generen los valores de carta 1, 2 y 3
-    // sum_1y2 va a ser mayor que 0 de todas maneras
+	
+    // sum_1y2 va a ser mayor que 0 de todas maneras (por eso no pongo sum_1y2 > 0, seria redundante)
 
 	if (sum_1y2 < 21) { cout << "¿Desea sacar una tercera carta (y/n)?\n"; cin >> respuesta ; }
 
