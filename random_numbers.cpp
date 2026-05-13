@@ -1,8 +1,6 @@
-#include <iostream>
+#include <cstdlib>
+#include <ctime>
 
-using namespace std;
+srand(time(0));
 
-int main() {
-    cout << "goodbye world";
-    return 0;
-}
+int dado = rand() % 6 + 1;
