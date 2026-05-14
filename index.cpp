@@ -22,7 +22,9 @@ int main() {
 
 	    cout << "\nBienvenido a BlackJack\n";
 	    cout << "¿Quieres comenzar (y/n)?\n  ";
-	    cin >> ans; if (ans == 'n') return 0;
+	    cin >> ans;
+
+        if (ans == 'n') return 0;
 
 	    cout << "Comienza el juego!!!\n";
 
@@ -35,25 +37,24 @@ int main() {
 	    cout << "Recibes la primera carta:\n " << cart_1 << endl;
 	    cout << "Recibes la segunda carta:\n " << cart_2 << endl;
 
-	    if (sum_1y2 < 21) { cout << "¿Desea sacar una tercera carta (y/n)?\n"; cin >> respuesta; }
+	    if (sum_1y2 < 21) cout << "¿Desea sacar una tercera carta (y/n)?\n"; cin >> respuesta; 
 
 	    if (respuesta == 'y') {
 
 		    cout << "Recibes la tercera carta:\n " << cart_3 << endl;
 		    sum_total = cart_3 + sum_1y2;
 
-		    if (sum_total > 21) { cout << "Te pasaste. Perdiste\n"; }
-		    else if (sum_total == 21) { cout << "Ganaste con 21\n"; }
+		    if (sum_total > 21) cout << "Te pasaste. Perdiste\n";
+		    else if (sum_total == 21) cout << "Ganaste con 21\n"; 
 		    else { 
-                if (sum_total >= 17) cout << "Ganaste\n";
-		        else cout << "Perdiste\n"; 
+                if (sum_total >= 17) cout << "Ganaste\n"; 
+                else cout << "Perdiste\n";
             }
 	    }
 
 	    else if (respuesta == 'n') {
-
-		    if (sum_1y2 >= 17) { cout << "Ganaste\n"; }
-		    else { cout << "Perdiste\n";}
+		    if (sum_1y2 >= 17) cout << "Ganaste\n"; 
+            else cout << "Perdiste\n";
 	    }
 
         cout << "\n¿Quieres jugar otra vez? (y/n): ";
@@ -63,5 +64,4 @@ int main() {
 	return 0;
 }
 
-//ya culmine los cambios: Alejandro
 
