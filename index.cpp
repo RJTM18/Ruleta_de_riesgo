@@ -22,11 +22,7 @@ int main() {
 
 	    cout << "\nBienvenido a BlackJack\n";
 	    cout << "¿Quieres comenzar (y/n)?\n  ";
-	    cin >> ans;
-
-        if (ans == 'n') {
-            return 0;
-        }
+	    cin >> ans; if (ans == 'n') return 0;
 
 	    cout << "Comienza el juego!!!\n";
 
@@ -47,12 +43,10 @@ int main() {
 		    sum_total = cart_3 + sum_1y2;
 
 		    if (sum_total > 21) { cout << "Te pasaste. Perdiste\n"; }
-
 		    else if (sum_total == 21) { cout << "Ganaste con 21\n"; }
-
 		    else { 
-                if (sum_total >= 17) { cout << "Ganaste\n"; }
-		        else { cout << "Perdiste\n"; }
+                if (sum_total >= 17) cout << "Ganaste\n";
+		        else cout << "Perdiste\n"; 
             }
 	    }
 
