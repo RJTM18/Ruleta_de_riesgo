@@ -43,15 +43,15 @@ int main() {
 
         // Primera carta
         cout << "\nPrimera carta:\n";
-        cout << "┌─────┐\n";
-        cout << "│  " << cart_1 << "  │\n";
-        cout << "└─────┘\n";
+        cout << "+-----+\n";
+        cout << "|  " << cart_1 << "  |\n";
+        cout << "+-----+\n";
 
         // Segunda carta
         cout << "\nSegunda carta:\n";
-        cout << "┌─────┐\n";
-        cout << "│  " << cart_2 << "  │\n";
-        cout << "└─────┘\n";
+        cout << "+-----+\n";
+        cout << "|  " << cart_2 << "  |\n";
+        cout << "+-----+\n";
 
         cout << "\nSuma actual: " << sum_1y2 << endl;
 
@@ -65,9 +65,9 @@ int main() {
 
             // Tercera carta
             cout << "\nTercera carta:\n";
-            cout << "┌─────┐\n";
-            cout << "│  " << cart_3 << "  │\n";
-            cout << "└─────┘\n";
+            cout << "+-----+\n";
+            cout << "|  " << cart_3 << "  |\n";
+            cout << "+-----+\n";
 
             sum_total = cart_3 + sum_1y2;
 
