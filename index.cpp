@@ -56,7 +56,6 @@ int main() {
         cout << "\nSuma actual: " << sum_1y2 << endl;
 
         if (sum_1y2 < 21) {
-
             cout << "\n¿Desea sacar una tercera carta? (y/n)\n";
             cin >> respuesta;
         }
@@ -73,41 +72,17 @@ int main() {
 
             cout << "\nSuma total: " << sum_total << endl;
 
-            if (sum_total > 21) {
-
-                cout << "\nTe pasaste. Perdiste\n";
-            }
-
-            else if (sum_total == 21) {
-
-                cout << "\nGanaste con 21\n";
-            }
-
+            if (sum_total > 21) cout << "\nTe pasaste. Perdiste\n";
+            else if (sum_total == 21) cout << "\nGanaste con 21\n";
             else {
-
-                if (sum_total >= 17) {
-
-                    cout << "\nGanaste\n";
-                }
-
-                else {
-
-                    cout << "\nPerdiste\n";
-                }
+                if (sum_total >= 17) cout << "\nGanaste\n";
+                else cout << "\nPerdiste\n";
             }
         }
 
         else if (respuesta == 'n') {
-
-            if (sum_1y2 >= 17) {
-
-                cout << "\nGanaste\n";
-            }
-
-            else {
-
-                cout << "\nPerdiste\n";
-            }
+            if (sum_1y2 >= 17) cout << "\nGanaste\n";
+            else { cout << "\nPerdiste\n"; }
         }
 
         cout << "\n¿Quieres jugar otra vez? (y/n): ";
